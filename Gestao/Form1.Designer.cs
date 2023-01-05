@@ -31,6 +31,8 @@
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonRegista = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.TxtPassC = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.TxtUser = new System.Windows.Forms.TextBox();
@@ -52,12 +54,6 @@
             this.BtnUp = new System.Windows.Forms.Button();
             this.BtnCos = new System.Windows.Forms.Button();
             this.BtnDel = new System.Windows.Forms.Button();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvD)).BeginInit();
@@ -89,6 +85,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.TxtPassC);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.TxtUser);
@@ -105,9 +103,26 @@
             this.panel1.Size = new System.Drawing.Size(351, 234);
             this.panel1.TabIndex = 2;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(127, 10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(209, 23);
+            this.textBox1.TabIndex = 12;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(10, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 20);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "ID :";
+            // 
             // TxtPassC
             // 
-            this.TxtPassC.Location = new System.Drawing.Point(127, 133);
+            this.TxtPassC.Location = new System.Drawing.Point(127, 159);
             this.TxtPassC.MaxLength = 25;
             this.TxtPassC.Name = "TxtPassC";
             this.TxtPassC.PasswordChar = '-';
@@ -118,7 +133,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(10, 136);
+            this.label7.Location = new System.Drawing.Point(10, 162);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(118, 20);
             this.label7.TabIndex = 9;
@@ -126,7 +141,7 @@
             // 
             // TxtUser
             // 
-            this.TxtUser.Location = new System.Drawing.Point(127, 74);
+            this.TxtUser.Location = new System.Drawing.Point(127, 100);
             this.TxtUser.MaxLength = 25;
             this.TxtUser.Name = "TxtUser";
             this.TxtUser.Size = new System.Drawing.Size(209, 23);
@@ -136,7 +151,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(10, 77);
+            this.label6.Location = new System.Drawing.Point(10, 103);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 20);
             this.label6.TabIndex = 7;
@@ -144,7 +159,7 @@
             // 
             // TxtPass
             // 
-            this.TxtPass.Location = new System.Drawing.Point(127, 103);
+            this.TxtPass.Location = new System.Drawing.Point(127, 129);
             this.TxtPass.MaxLength = 25;
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.PasswordChar = '-';
@@ -155,7 +170,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(10, 106);
+            this.label5.Location = new System.Drawing.Point(10, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 20);
             this.label5.TabIndex = 5;
@@ -177,7 +192,7 @@
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(127, 44);
+            this.TxtEmail.Location = new System.Drawing.Point(127, 70);
             this.TxtEmail.MaxLength = 25;
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(209, 23);
@@ -187,7 +202,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(10, 47);
+            this.label2.Location = new System.Drawing.Point(10, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 2;
@@ -195,7 +210,7 @@
             // 
             // TxtNome
             // 
-            this.TxtNome.Location = new System.Drawing.Point(127, 13);
+            this.TxtNome.Location = new System.Drawing.Point(127, 39);
             this.TxtNome.Name = "TxtNome";
             this.TxtNome.Size = new System.Drawing.Size(209, 23);
             this.TxtNome.TabIndex = 1;
@@ -204,7 +219,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(10, 16);
+            this.label1.Location = new System.Drawing.Point(10, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 0;
@@ -261,7 +276,6 @@
             this.TxtUserL.Name = "TxtUserL";
             this.TxtUserL.Size = new System.Drawing.Size(209, 23);
             this.TxtUserL.TabIndex = 1;
-            this.TxtUserL.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
@@ -275,17 +289,12 @@
             // 
             // DgvD
             // 
-            this.DgvD.AllowUserToOrderColumns = true;
+            this.DgvD.AllowUserToAddRows = false;
+            this.DgvD.AllowUserToDeleteRows = false;
             this.DgvD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
             this.DgvD.Location = new System.Drawing.Point(395, 102);
             this.DgvD.Name = "DgvD";
+            this.DgvD.ReadOnly = true;
             this.DgvD.RowHeadersWidth = 10;
             this.DgvD.RowTemplate.Height = 20;
             this.DgvD.Size = new System.Drawing.Size(520, 232);
@@ -325,44 +334,7 @@
             this.BtnDel.TabIndex = 10;
             this.BtnDel.Text = "Apagar";
             this.BtnDel.UseVisualStyleBackColor = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "ConfPass";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 59;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Password";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Username";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Email";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nome";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 50;
+            this.BtnDel.Click += new System.EventHandler(this.BtnDel_Click);
             // 
             // Form1
             // 
@@ -377,8 +349,8 @@
             this.Controls.Add(this.DgvD);
             this.Controls.Add(this.buttonRegista);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -419,11 +391,7 @@
         private Button BtnUp;
         private Button BtnCos;
         private Button BtnDel;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
+        private TextBox textBox1;
+        private Label label8;
     }
 }

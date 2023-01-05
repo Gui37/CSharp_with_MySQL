@@ -66,10 +66,6 @@ namespace Gestao
             }
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtnCos_Click(object sender, EventArgs e)
         {
@@ -96,14 +92,37 @@ namespace Gestao
                 
             }
         }
+        private void BtnDel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conexao = new MySqlConnection(cs);
+                strSQl = "DELETE FROM user WHERE nome = @nome";
+                cmd = new MySqlCommand(strSQl, conexao);
+                
+
+                conexao.Open();
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                conexao.Close();
+
+            }
+        }
 
         private void BtnUp_Click(object sender, EventArgs e)
         {
             try
             {
                 conexao = new MySqlConnection(cs);
-                strSQl = "UPDATE user SET nome=@nome, SET email=@email, SET username=@username," +
-                    " SET password=@password, SET confpass=@confpass WHERE id = @id";
+                strSQl = "UPDATE user SET nome=@nome, SET email=@email, SET username=@username, SET password=@password, SET confpass=@confpass WHERE id = '1'";
                 cmd = new MySqlCommand(strSQl, conexao);
                 cmd.Parameters.AddWithValue("@nome", TxtNome.Text);
                 cmd.Parameters.AddWithValue("@email", TxtEmail.Text);
@@ -131,5 +150,7 @@ namespace Gestao
         {
 
         }
+
+        
     }
 }
