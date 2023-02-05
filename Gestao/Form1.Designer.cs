@@ -31,8 +31,6 @@
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonRegista = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.TxtPassC = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.TxtUser = new System.Windows.Forms.TextBox();
@@ -54,6 +52,7 @@
             this.BtnUp = new System.Windows.Forms.Button();
             this.BtnCos = new System.Windows.Forms.Button();
             this.BtnDel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvD)).BeginInit();
@@ -63,7 +62,7 @@
             // 
             this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Location = new System.Drawing.Point(30, 29);
+            this.buttonLogin.Location = new System.Drawing.Point(12, 15);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(140, 47);
             this.buttonLogin.TabIndex = 0;
@@ -75,18 +74,16 @@
             // 
             this.buttonRegista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonRegista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRegista.Location = new System.Drawing.Point(204, 29);
+            this.buttonRegista.Location = new System.Drawing.Point(201, 15);
             this.buttonRegista.Name = "buttonRegista";
             this.buttonRegista.Size = new System.Drawing.Size(140, 47);
-            this.buttonRegista.TabIndex = 1;
+            this.buttonRegista.TabIndex = 0;
             this.buttonRegista.Text = "Registar";
             this.buttonRegista.UseVisualStyleBackColor = true;
             this.buttonRegista.Click += new System.EventHandler(this.buttonRegista_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.TxtPassC);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.TxtUser);
@@ -103,37 +100,20 @@
             this.panel1.Size = new System.Drawing.Size(351, 234);
             this.panel1.TabIndex = 2;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(127, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(209, 23);
-            this.textBox1.TabIndex = 12;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(10, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 20);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "ID :";
-            // 
             // TxtPassC
             // 
-            this.TxtPassC.Location = new System.Drawing.Point(127, 159);
+            this.TxtPassC.Location = new System.Drawing.Point(124, 140);
             this.TxtPassC.MaxLength = 25;
             this.TxtPassC.Name = "TxtPassC";
             this.TxtPassC.PasswordChar = '-';
             this.TxtPassC.Size = new System.Drawing.Size(209, 23);
-            this.TxtPassC.TabIndex = 10;
+            this.TxtPassC.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(10, 162);
+            this.label7.Location = new System.Drawing.Point(3, 143);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(118, 20);
             this.label7.TabIndex = 9;
@@ -141,17 +121,17 @@
             // 
             // TxtUser
             // 
-            this.TxtUser.Location = new System.Drawing.Point(127, 100);
+            this.TxtUser.Location = new System.Drawing.Point(124, 75);
             this.TxtUser.MaxLength = 25;
             this.TxtUser.Name = "TxtUser";
             this.TxtUser.Size = new System.Drawing.Size(209, 23);
-            this.TxtUser.TabIndex = 8;
+            this.TxtUser.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(10, 103);
+            this.label6.Location = new System.Drawing.Point(3, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 20);
             this.label6.TabIndex = 7;
@@ -159,18 +139,18 @@
             // 
             // TxtPass
             // 
-            this.TxtPass.Location = new System.Drawing.Point(127, 129);
+            this.TxtPass.Location = new System.Drawing.Point(124, 107);
             this.TxtPass.MaxLength = 25;
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.PasswordChar = '-';
             this.TxtPass.Size = new System.Drawing.Size(209, 23);
-            this.TxtPass.TabIndex = 6;
+            this.TxtPass.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(10, 132);
+            this.label5.Location = new System.Drawing.Point(3, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 20);
             this.label5.TabIndex = 5;
@@ -185,24 +165,24 @@
             this.button3.Location = new System.Drawing.Point(22, 183);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(314, 34);
-            this.button3.TabIndex = 4;
+            this.button3.TabIndex = 5;
             this.button3.Text = "Registe";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(127, 70);
-            this.TxtEmail.MaxLength = 25;
+            this.TxtEmail.Location = new System.Drawing.Point(124, 42);
+            this.TxtEmail.MaxLength = 60;
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(209, 23);
-            this.TxtEmail.TabIndex = 3;
+            this.TxtEmail.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(10, 73);
+            this.label2.Location = new System.Drawing.Point(3, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 2;
@@ -210,7 +190,7 @@
             // 
             // TxtNome
             // 
-            this.TxtNome.Location = new System.Drawing.Point(127, 39);
+            this.TxtNome.Location = new System.Drawing.Point(124, 8);
             this.TxtNome.Name = "TxtNome";
             this.TxtNome.Size = new System.Drawing.Size(209, 23);
             this.TxtNome.TabIndex = 1;
@@ -219,7 +199,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(10, 42);
+            this.label1.Location = new System.Drawing.Point(3, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 0;
@@ -291,23 +271,27 @@
             // 
             this.DgvD.AllowUserToAddRows = false;
             this.DgvD.AllowUserToDeleteRows = false;
+            this.DgvD.AllowUserToResizeRows = false;
+            this.DgvD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DgvD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.DgvD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvD.Location = new System.Drawing.Point(395, 102);
+            this.DgvD.Location = new System.Drawing.Point(365, 79);
+            this.DgvD.MultiSelect = false;
             this.DgvD.Name = "DgvD";
-            this.DgvD.ReadOnly = true;
-            this.DgvD.RowHeadersWidth = 10;
+            this.DgvD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
             this.DgvD.RowTemplate.Height = 20;
-            this.DgvD.Size = new System.Drawing.Size(520, 232);
-            this.DgvD.TabIndex = 6;
+            this.DgvD.Size = new System.Drawing.Size(610, 255);
+            this.DgvD.TabIndex = 9;
+            this.DgvD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvD_CellClick);
             // 
             // BtnUp
             // 
             this.BtnUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUp.Location = new System.Drawing.Point(395, 38);
+            this.BtnUp.Location = new System.Drawing.Point(365, 15);
             this.BtnUp.Name = "BtnUp";
             this.BtnUp.Size = new System.Drawing.Size(133, 47);
-            this.BtnUp.TabIndex = 8;
+            this.BtnUp.TabIndex = 6;
             this.BtnUp.Text = "Actualizar";
             this.BtnUp.UseVisualStyleBackColor = true;
             this.BtnUp.Click += new System.EventHandler(this.BtnUp_Click);
@@ -316,10 +300,10 @@
             // 
             this.BtnCos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCos.Location = new System.Drawing.Point(643, 38);
+            this.BtnCos.Location = new System.Drawing.Point(529, 15);
             this.BtnCos.Name = "BtnCos";
             this.BtnCos.Size = new System.Drawing.Size(133, 47);
-            this.BtnCos.TabIndex = 5;
+            this.BtnCos.TabIndex = 7;
             this.BtnCos.Text = "Consultar";
             this.BtnCos.UseVisualStyleBackColor = true;
             this.BtnCos.Click += new System.EventHandler(this.BtnCos_Click);
@@ -328,21 +312,34 @@
             // 
             this.BtnDel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDel.Location = new System.Drawing.Point(782, 38);
+            this.BtnDel.Location = new System.Drawing.Point(686, 15);
             this.BtnDel.Name = "BtnDel";
             this.BtnDel.Size = new System.Drawing.Size(133, 47);
-            this.BtnDel.TabIndex = 10;
+            this.BtnDel.TabIndex = 8;
             this.BtnDel.Text = "Apagar";
             this.BtnDel.UseVisualStyleBackColor = true;
             this.BtnDel.Click += new System.EventHandler(this.BtnDel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(842, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 47);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Fechar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(939, 339);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(987, 340);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnDel);
             this.Controls.Add(this.BtnCos);
             this.Controls.Add(this.BtnUp);
@@ -354,6 +351,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -391,7 +389,6 @@
         private Button BtnUp;
         private Button BtnCos;
         private Button BtnDel;
-        private TextBox textBox1;
-        private Label label8;
+        private Button button1;
     }
 }
