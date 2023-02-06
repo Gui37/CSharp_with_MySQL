@@ -23,8 +23,32 @@ namespace Gestao
         public Form1()
         {
             InitializeComponent();
+            criaTabela();
         }
-       
+        private void criaTabela()
+        {
+            try
+            {
+                conexao = new MySqlConnection(cs);
+                conexao.Open();
+                strSQl = "DROP TABLE IF EXISTS user";
+                cmd = new MySqlCommand(strSQl, conexao);
+                cmd.ExecuteNonQuery();
+
+                MySqlCommand Create_table = new (@"
+                    CREATE TABLE `user` 
+                    (id INT NOT NULL AUTO_INCREMENT,
+                    nome VARCHAR(50) NOT NULL, email VARCHAR(50) NOT NULL,
+                    username VARCHAR(35) NOT NULL, password VARCHAR(15) NOT NULL,
+                    confpass VARCHAR(15) NOT NULL,
+                    PRIMARY KEY (id)) COLLATE='utf8_general_ci' ENGINE=InnoDB;", conexao);
+                Create_table.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
@@ -55,11 +79,11 @@ namespace Gestao
                 if (i>0)
                 {
                     
-                    MessageBox.Show("Login efectuado com sucesso");
+                    MessageBox.Show("Login efectuado com sucesso","Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Usuario nao encontrado");
+                    MessageBox.Show("Usuário não encontrado","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
@@ -69,6 +93,7 @@ namespace Gestao
             }
             finally
             {
+                BtnCos_Click(sender, e);
                 conexao.Close();
 
             }
@@ -125,7 +150,7 @@ namespace Gestao
                 conexao = new MySqlConnection(cs);
                 strSQl = "SELECT * FROM user";
                 da = new MySqlDataAdapter(strSQl, conexao);
-                DataTable dt = new DataTable();
+                DataTable dt = new();
                 da.Fill(dt);
 
                 DgvD.DataSource = dt;
@@ -150,7 +175,6 @@ namespace Gestao
                 strSQl = "DELETE FROM user WHERE id = @id";
                 cmd = new MySqlCommand(strSQl, conexao);
                 cmd.Parameters.AddWithValue("@id", pos);
-
                 
                 conexao.Open();
                 cmd.ExecuteNonQuery();
@@ -215,7 +239,6 @@ namespace Gestao
                 username = row.Cells["username"].Value.ToString();
                 password = row.Cells["password"].Value.ToString();
                 confPass = row.Cells["confpass"].Value.ToString();
-
             }
         }
 
